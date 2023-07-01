@@ -153,7 +153,6 @@ a {
 }
 
 html {
-    overflow: hidden;
     font-size: 62.5%;
 }
 
@@ -179,10 +178,12 @@ html {
         font-size: 35.5%;
     }
 }
-img{
+
+img {
     max-width: 100%;
     height: auto;
 }
+
 .main-header {
     &__top {
         border-bottom: 0.1rem solid #d3d3d3;
@@ -388,17 +389,191 @@ img{
                 font-size: 1.3rem;
                 font-weight: 300;
                 margin-right: 0.5rem;
-                &::after{
+
+                &::after {
                     content: "/";
                     margin-left: 0.5rem;
                 }
-                &:last-of-type{
+
+                &:last-of-type {
                     color: #919191;
-                    &::after{
+
+                    &::after {
                         content: none;
                     }
                 }
             }
+        }
+    }
+}
+
+.main {
+    &__wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    &__left {
+        margin-right: 16.4rem;
+    }
+
+    &__heading {
+        color: #000000;
+        font-size: 3.5rem;
+        font-weight: 400;
+        line-height: 3.333rem;
+        text-transform: uppercase;
+        margin-bottom: 3.8rem;
+    }
+
+    &__additional-text {
+        display: block;
+        color: #000000;
+        font-size: 1.4rem;
+        font-weight: 400;
+        margin-bottom: 1.2rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__subheading {
+        color: #000000;
+        font-size: 2.7rem;
+        font-weight: 700;
+        line-height: 3.861rem;
+
+        &-old {
+            color: #ff7171;
+            font-size: 23px;
+            font-weight: 400;
+            line-height: 38.61px;
+            text-decoration: line-through;
+            margin-left: 2.1rem;
+        }
+    }
+
+    &__text {
+        color: #000000;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 20.83px;
+
+        &:first-of-type {
+            margin-bottom: 3rem;
+        }
+
+        &:last-of-type {
+            margin-bottom: 3.9rem;
+        }
+    }
+
+    &__select {
+        display: block;
+        width: 10.4rem;
+        height: 3.4rem;
+        border: 0.1rem solid #cbcbcb;
+        background-color: #ffffff;
+        margin-bottom: 4.4rem;
+    }
+
+    &__shapes {
+        margin-bottom: 3rem;
+        padding-bottom: 3.1rem;
+        border-bottom: 0.1rem solid #d3d3d3;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+        &-item {
+            width: 2.3rem;
+            height: 2.3rem;
+            border: 0.4rem solid #ffffff;
+
+            &:nth-of-type(1) {
+                background-color: #6468ff;
+            }
+
+            &:nth-of-type(2) {
+                background-color: #49b10a;
+            }
+
+            &:nth-of-type(3) {
+                border: 0.4rem solid #ecc7d0;
+                background-color: #e26f76;
+            }
+
+            &:nth-of-type(4) {
+                background-color: #000000;
+            }
+        }
+    }
+
+    &__to-basket {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+
+        input {
+            margin: 0 1.3rem 0 0.9rem;
+            width: 4.4rem;
+            height: 4.4rem;
+            border: 0.1rem solid #cbcbcb;
+            background-color: #ffffff;
+            text-align: center;
+
+            &::-webkit-input-placeholder {
+                text-align: center;
+            }
+
+            &::-moz-placeholder {
+                text-align: center;
+            }
+
+            &:-ms-input-placeholder {
+                text-align: center;
+            }
+
+            &::-ms-input-placeholder {
+                text-align: center;
+            }
+
+            &::placeholder {
+                text-align: center;
+            }
+        }
+
+        &-button {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            width: 18.3rem;
+            height: 4.5rem;
+            color: #ffffff;
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 3rem;
+            background-color: #eb316b;
+        }
+    }
+    &__subsection{
+        padding: 3.5rem 0 9rem 0;
+        .main__text{
+            margin-bottom: 2rem;
         }
     }
 }
