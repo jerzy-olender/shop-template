@@ -46,7 +46,7 @@ const styles = function () {
         
         pipe(rename({
             'basename': 'styles',
-            'suffix': '.min'
+            
             
         })).
         pipe(gulp.dest(paths.styles.dest));
