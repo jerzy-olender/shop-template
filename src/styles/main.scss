@@ -161,19 +161,19 @@ html {
     margin: 0 auto;
 }
 
-@media (max-width:1600px) {
+@media (max-width:1360px) {
     html {
         font-size: 55%;
     }
 }
 
-@media (max-width:1360px) {
+@media (max-width:1160px) {
     html {
         font-size: 45.5%;
     }
 }
 
-@media (max-width:1200px) {
+@media (max-width:950px) {
     html {
         font-size: 35.5%;
     }
@@ -415,7 +415,13 @@ img {
     }
 
     &__left {
+        min-width: 54.1rem;
+        ;
         margin-right: 16.4rem;
+    }
+
+    &__right {
+        min-width: 48rem;
     }
 
     &__heading {
@@ -556,11 +562,11 @@ img {
             display: -ms-flexbox;
             display: flex;
             -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
             -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
             width: 18.3rem;
             height: 4.5rem;
             color: #ffffff;
@@ -570,10 +576,163 @@ img {
             background-color: #eb316b;
         }
     }
-    &__subsection{
+
+    &__subsection {
         padding: 3.5rem 0 9rem 0;
-        .main__text{
+
+        .main__text {
             margin-bottom: 2rem;
+        }
+    }
+}
+
+.recently-purchased {
+    padding: 9rem 0 7.2rem 0;
+
+    &__items {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        width: calc(25% - 40px);
+        margin: 0 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    &__heading {
+        margin-bottom: 4rem;
+        color: #000000;
+        font-size: 2.9rem;
+        font-weight: 300;
+        line-height: 4.753rem;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: #000000;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2.083rem;
+        letter-spacing: 0.35px;
+    }
+
+    &__price {
+        color: #000000;
+        font-size: 1.7rem;
+        font-weight: 700;
+        line-height: 2.361rem;
+    }
+
+    &.related {
+        padding-bottom: 11.4rem;
+    }
+}
+
+.rose-belt {
+    margin: 8.1rem 0 8.3rem 0;
+    padding: 6.9rem 0;
+    background-color: #faeef1;
+
+    &__items {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    &__heading {
+        color: #191919;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20.83px;
+        margin-left: 2.2rem;
+    }
+}
+.main-footer{
+    &__items{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+    &__list{
+        &-element p{
+            
+        }
+        
+    }
+    &__item{
+        &-text{
+            display: block;
+            color: #010101;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 23.61px; 
+            &:first-of-type{
+                font-weight: 700;
+            }
+            &.icon{
+                &::before{
+                    content: url("../../images/list-style-image-geo.png");
+                    margin-right: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:790px) {
+    .main-header {
+        &__bottom-link {
+            display: none;
+        }
+    }
+
+    .recently-purchased {
+        &__item {
+            width: calc(50% - 40px);
+        }
+    }
+}
+
+@media (max-width:460px) {
+    .recently-purchased {
+        &__item {
+            width: calc(70% - 40px);
         }
     }
 }
