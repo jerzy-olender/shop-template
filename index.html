@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop example template</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="dist/styles/styles.css">
-    <script>
-        $(function () {
-            $("#tabs").tabs();
-        });
-    </script>
+
 </head>
 
 <body>
@@ -28,9 +27,9 @@
                                 src="images/header-mail-icon.png" alt="mail icon">kontakt@aurorabox.pl</a>
                     </div>
                     <div class="main-header__top-right">
-                        <a class="main-header__top-link" href="#"><img src="images/header-lock-icon.png"
+                        <a class="main-header__top-link add-border" href="#"><img src="images/header-lock-icon.png"
                                 alt="lock icon">Zaloguj się</a>
-                        <a class="main-header__top-link" href="#"><img src="images/header-person-icon.png"
+                        <a class="main-header__top-link add-border" href="#"><img src="images/header-person-icon.png"
                                 alt="person icon">Załóż konto</a>
                     </div>
                 </div>
@@ -45,6 +44,7 @@
                         </a>
                     </div>
                     <div class="main-header__middle-search">
+                        <img src="images/icon__lens.png" alt="icon lens">
                         <input placeholder="Co chcesz kupić?">
                     </div>
                     <div class="main-header__middle-basket">
@@ -65,28 +65,28 @@
                             <a class="main-header__bottom-link" href="#">kategorie</a>
                         </li>
                         <li class="main-header__bottom-item">
-                            <a class="main-header__bottom-link" href="#">kategorie</a>
+                            <a class="main-header__bottom-link" href="#">Nowości</a>
                         </li>
                         <li class="main-header__bottom-item">
-                            <a class="main-header__bottom-link" href="#">kategorie</a>
+                            <a class="main-header__bottom-link" href="#">Promocje</a>
                         </li>
                         <li class="main-header__bottom-item">
-                            <a class="main-header__bottom-link" href="#">kategorie</a>
+                            <a class="main-header__bottom-link add-color" href="#">wyprzedaże</a>
                         </li>
                         <li class="main-header__bottom-item">
-                            <a class="main-header__bottom-link" href="#">kategorie</a>
+                            <a class="main-header__bottom-link" href="#">Kolekcje sezony</a>
                         </li>
                         <li class="main-header__bottom-item">
-                            <a class="main-header__bottom-link" href="#">kategorie</a>
+                            <a class="main-header__bottom-link" href="#">Nasza oferta</a>
                         </li>
                         <li class="main-header__bottom-item">
-                            <a class="main-header__bottom-link" href="#">kategorie</a>
+                            <a class="main-header__bottom-link" href="#">Trendy 2018</a>
                         </li>
                         <li class="main-header__bottom-item">
-                            <a class="main-header__bottom-link" href="#">kategorie</a>
+                            <a class="main-header__bottom-link" href="#">Blog</a>
                         </li>
                         <li class="main-header__bottom-item">
-                            <a class="main-header__bottom-link" href="#">kategorie</a>
+                            <a class="main-header__bottom-link" href="#">kontakt</a>
                         </li>
                     </ul>
                 </div>
@@ -100,327 +100,375 @@
         </div>
 
     </header>
-</body>
-<section class="main">
-    <div class="container">
-        <div class="main__wrapper">
-            <div class="main__left">
-                <img src="images/main-image-big.png" alt="main image">
-            </div>
-            <div class="main__right">
-                <h1 class="main__heading">
-                    biustonosz push-up<br>line mos 12
-                </h1>
-                <span class="main__additional-text">
-                    nasza cena:
-                </span>
-                <h2 class="main__subheading">
-                    59.00 zł
-                    <span class="main__subheading-old">79.00zł</span>
-                </h2>
-                <p class="main__text">
-                    Biustonosz miękki bez fiszbin wykonany z gładkiego, połyskującego materiału, imitującego
-                    satynę.<br>Model posiada skośne cięcie, które idealnie podtrzymuje biust.<br>Zaopatrzony we
-                    wzmocnioną baskinkę (bardziej zabudowany pod biustem), która zastępuje rolę fiszbiny
-                    i zapewnia jeszcze większy komfort noszenia.</p>
-                <p class="main__text">Miseczki wykończono ozdobną lamówką, która gwarantuje stabilizację i dobry
-                    trzymanie biustu.</p>
-                <span class="main__additional-text">
-                    rozmiar:
-                </span>
-                <select class="main__select" name="bra" id="bra">
-                    <option value="65b">65B (39)</option>
-                    <option value="66b">66B (40)</option>
-                    <option value="67b">67B (41)</option>
-                    <option value="68b">68B (42)</option>
-                </select>
-                <span class="main__additional-text">
-                    kolor:
-                </span>
-                <div class="main__shapes">
-                    <div class="main__shapes-item">
-                    </div>
-                    <div class="main__shapes-item">
-                    </div>
-                    <div class="main__shapes-item">
-                    </div>
-                    <div class="main__shapes-item">
-                    </div>
-                </div>
-                <div class="main__to-basket">
-                    <span class="main__additional-text">
-                        ilość:
-                    </span>
-                    <input placeholder="1">
-                    <a href="#" class="main__to-basket-button">
-                        Dodaj do koszyka
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="main__subsection">
-            <div id="tabs">
-                <ul>
-                    <li><a href="#tabs-1">tabela rozmiarów</a></li>
-                    <li><a href="#tabs-2">zadaj pytanie</a></li>
-                </ul>
-                <div id="tabs-1">
-                    <p class="main__text">
-                        Biustonosz miękki bez fiszbin wykonany z gładkiego, połyskującego materiału, imitującego satynę.
-                        Model
-                        posiada skośne cięcie, które idealnie podtrzymuje biust.
-                    </p>
-                    <p class="main__text">
-                        Zaopatrzony we wzmocnioną baskinkę (bardziej zabudowany pod biustem), która zastępuje rolę
-                        fiszbiny i
-                        zapewnia jeszcze większy komfort noszenia.
-                        Miseczki wykończono ozdobną lamówką, która gwarantuje stabilizację i dobry trzymanie biustu.
-                        Pomiędzy
-                        miseczkami umieszczono ozdobny akcent w postaci kwiatka. Ramiączka gładkie regulowane na
-                        całości.
-                    </p>
-                    <p class="main__text">
-                        Biustonosz zapinany z tyłu na haftki z trójstopniową regulacją zapięcia. Bardzo wygodny fason,
-                        idealny na co
-                        dzień. Skład: 95% poliamid, 5% elastan Model posiada skośne cięcie, które idealnie podtrzymuje
-                        biust.
-                    </p>
-                    <p class="main__text">
-                        Zaopatrzony we wzmocnioną baskinkę (bardziej zabudowany pod biustem), która zastępuje rolę
-                        fiszbiny i
-                        zapewnia jeszcze większy komfort noszenia.
-                        Miseczki wykończono ozdobną lamówką, która gwarantuje stabilizację i dobry trzymanie biustu.
-                        Pomiędzy
-                        miseczkami umieszczono ozdobny akcent w postaci kwiatka. Ramiączka gładkie regulowane na
-                        całości.
-                    </p>
-                    <p class="main__text">
-                        Biustonosz zapinany z tyłu na haftki z trójstopniową regulacją zapięcia. Bardzo wygodny fason,
-                        idealny na co
-                        dzień. Skład: 95% poliamid, 5% elastan Model posiada skośne cięcie, które idealnie podtrzymuje
-                        biust.
-                    </p>
-                    <p class="main__text">
-                        Zaopatrzony we wzmocnioną baskinkę (bardziej zabudowany pod biustem), która zastępuje rolę
-                        fiszbiny i
-                        zapewnia jeszcze większy komfort noszenia.
-                        Miseczki wykończono ozdobną lamówką, która gwarantuje stabilizację i dobry trzymanie biustu.
-                        Pomiędzy
-                        miseczkami umieszczono ozdobny akcent w postaci kwiatka. Ramiączka gładkie regulowane na
-                        całości.
-                    </p>
-                    <p class="main__text">
-                        Biustonosz zapinany z tyłu na haftki z trójstopniową regulacją zapięcia. Bardzo wygodny fason,
-                        idealny na co
-                        dzień. Skład: 95% poliamid, 5% elastan Model posiada skośne cięcie, które idealnie podtrzymuje
-                        biust.
-                    </p>
-                </div>
-                <div id="tabs-2">
-                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus
-                        id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus
-                        eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse
-                        sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing.
-                        Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla.
-                        Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium
-                        posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et
-                        purus.</p>
-                </div>
 
-            </div>
-        </div>
-</section>
-</div>
-</section>
-<section class="recently-purchased">
-    <div class="container">
-        <h2 class="recently-purchased__heading">
-            Ostatnio kupione produkty
-        </h2>
-        <div class="recently-purchased__items">
-            <div class="recently-purchased__item">
-                <img src="images/recently-purchased-item-img.png" alt="recently purchased image">
-                <span class="recently-purchased__text">
-                    Przykładowy biustonosz
-                </span>
-                <h3 class="recently-purchased__price">
-                    59.00 zł
-                </h3>
-            </div>
-            <div class="recently-purchased__item">
-                <img src="images/recently-purchased-item-img.png" alt="recently purchased image">
-                <span class="recently-purchased__text">
-                    Przykładowy biustonosz
-                </span>
-                <h3 class="recently-purchased__price">
-                    59.00 zł
-                </h3>
-            </div>
-            <div class="recently-purchased__item">
-                <img src="images/recently-purchased-item-img.png" alt="recently purchased image">
-                <span class="recently-purchased__text">
-                    Przykładowy biustonosz
-                </span>
-                <h3 class="recently-purchased__price">
-                    59.00 zł
-                </h3>
-            </div>
-            <div class="recently-purchased__item">
-                <img src="images/recently-purchased-item-img.png" alt="recently purchased image">
-                <span class="recently-purchased__text">
-                    Przykładowy biustonosz
-                </span>
-                <h3 class="recently-purchased__price">
-                    59.00 zł
-                </h3>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="recently-purchased related">
-    <div class="container">
-        <h2 class="recently-purchased__heading">
-            Powiązane produkty
-        </h2>
-        <div class="recently-purchased__items">
-            <div class="recently-purchased__item">
-                <img src="images/recently-purchased-item-img.png" alt="recently purchased image">
-                <span class="recently-purchased__text">
-                    Przykładowy biustonosz
-                </span>
-                <h3 class="recently-purchased__price">
-                    59.00 zł
-                </h3>
-            </div>
-            <div class="recently-purchased__item">
-                <img src="images/recently-purchased-item-img.png" alt="recently purchased image">
-                <span class="recently-purchased__text">
-                    Przykładowy biustonosz
-                </span>
-                <h3 class="recently-purchased__price">
-                    59.00 zł
-                </h3>
-            </div>
-            <div class="recently-purchased__item">
-                <img src="images/recently-purchased-item-img.png" alt="recently purchased image">
-                <span class="recently-purchased__text">
-                    Przykładowy biustonosz
-                </span>
-                <h3 class="recently-purchased__price">
-                    59.00 zł
-                </h3>
-            </div>
-            <div class="recently-purchased__item">
-                <img src="images/recently-purchased-item-img.png" alt="recently purchased image">
-                <span class="recently-purchased__text">
-                    Przykładowy biustonosz
-                </span>
-                <h3 class="recently-purchased__price">
-                    59.00 zł
-                </h3>
-            </div>
-        </div>
-    </div>
-</section>
-<section class="fashionshop">
-    <div class="container">
-        <img src="images/fashionshop-image.png" alt="fashionshop">
-    </div>
-</section>
-<section class="rose-belt">
-    <div class="container">
-        <div class="rose-belt__items">
-            <div class="rose-belt__item">
-                <img src="images/rose-belt-icon-car.png" alt="rose belt icon car">
-                <h3 class="rose-belt__heading">
-                    Błyskawiczna wysyłka<br>w 24 godziny po zapłacie
-                </h3>
-            </div>
-            <div class="rose-belt__item">
-                <img src="images/rose-belt-icon-hand.png" alt="rose belt icon hand">
-                <h3 class="rose-belt__heading">
-                    Błyskawiczna wysyłka<br>w 24 godziny po zapłacie
-                </h3>
-            </div>
-            <div class="rose-belt__item">
-                <img src="images/rose-belt-icon-envelope.png" alt="rose belt icon envelope">
-                <h3 class="rose-belt__heading">
-                    Błyskawiczna wysyłka<br>w 24 godziny po zapłacie
-                </h3>
-            </div>
-            <div class="rose-belt__item">
-                <img src="images/rose-belt-icon-smile.png" alt="rose belt icon smile">
-                <h3 class="rose-belt__heading">
-                    Błyskawiczna wysyłka<br>w 24 godziny po zapłacie
-                </h3>
-            </div>
-        </div>
-    </div>
-</section>
-<footer class="main-footer">
-    <div class="main-footer__top">
+    <section class="main">
         <div class="container">
-            <div class="main-footer__items">
-                <div class="main-footer__item">
-                    <div class="main-footer__list">
-                        <div class="main-footer__list-element">
-                            <p class="main-footer__item-text icon">Aurora BOX</p>
-                            <p class="main-footer__item-text"> 15-455 Białystok</p>
-                            <p class="main-footer__item-text">ul. Bieliźniana 11 lok. 8</p>
-                        </div>
-                        <div class="main-footer__list-element">
-                            <a class="main-footer__item-text icon">85 526 99 22</a><br>
-                            <a class="main-footer__item-text icon">sklep@aurorabox.pl </a>
-                        </div>
-                        <div class="main-footer__list-element"><img src="images/icon__fb.png" alt="">
-                            <img src="images/icon__fb.png" alt="">
-                            <img src="images/icon__fb.png" alt=""></div>
+            <div class="main__wrapper">
+                <div class="main__left">
+                    <div class="main__left-wrapper--big">
+                        <img src="images/main-image-big.png" alt="main image">
+                        <img src="images/main-image-big.png" alt="main image">
+                        <img src="images/main-image-big.png" alt="main image">
+                        <img src="images/main-image-big.png" alt="main image">
+                    </div>
+                    <div class="main__left-wrapper--small">
+                        <img src="images/main-image-big.png" alt="main image">
+                        <img src="images/main-image-big.png" alt="main image">
+                        <img src="images/main-image-big.png" alt="main image">
+                        <img src="images/main-image-big.png" alt="main image">
                     </div>
                 </div>
-                <div class="main-footer__item">
-                    <a class="main-footer__item-text">Strefa klienta</a>
-                    <a class="main-footer__item-text">Moje konto</a>
-                    <a class="main-footer__item-text">Koszty i czas dostawy</a>
-                    <a class="main-footer__item-text">Wymiana i zwroty</a>
-                    <a class="main-footer__item-text">Reklamacje</a>
-                    <a class="main-footer__item-text">Regulamin sklepu</a>
-                    <a class="main-footer__item-text">Zobacz </a>
+                <div class="main__right">
+                    <h1 class="main__heading">
+                        biustonosz push-up<br>line mos 12
+                    </h1>
+                    <span class="main__additional-text">
+                        nasza cena:
+                    </span>
+                    <h2 class="main__subheading">
+                        59.00 zł
+                        <span class="main__subheading-old">79.00zł</span>
+                    </h2>
+                    <p class="main__text">
+                        Biustonosz miękki bez fiszbin wykonany z gładkiego, połyskującego materiału, imitującego
+                        satynę.<br>Model posiada skośne cięcie, które idealnie podtrzymuje biust.<br>Zaopatrzony we
+                        wzmocnioną baskinkę (bardziej zabudowany pod biustem), która zastępuje rolę fiszbiny
+                        i zapewnia jeszcze większy komfort noszenia.</p>
+                    <p class="main__text">Miseczki wykończono ozdobną lamówką, która gwarantuje stabilizację i dobry
+                        trzymanie biustu.</p>
+                    <span class="main__additional-text">
+                        rozmiar:
+                    </span>
+                    <select class="main__select" name="bra" id="bra">
+                        <option value="65b">65B (39)</option>
+                        <option value="66b">66B (40)</option>
+                        <option value="67b">67B (41)</option>
+                        <option value="68b">68B (42)</option>
+                    </select>
+                    <span class="main__additional-text">
+                        kolor:
+                    </span>
+                    <div class="main__shapes">
+                        <div class="main__shapes-item">
+                        </div>
+                        <div class="main__shapes-item">
+                        </div>
+                        <div class="main__shapes-item">
+                        </div>
+                        <div class="main__shapes-item">
+                        </div>
+                    </div>
+                    <div class="main__to-basket">
+                        <span class="main__additional-text">
+                            ilość:
+                        </span>
+                        <input placeholder="1">
+                        <a href="#" class="main__to-basket-button">
+                            Dodaj do koszyka
+                        </a>
+                    </div>
                 </div>
-                <div class="main-footer__item">
-                    <a class="main-footer__item-text">Strefa klienta</a>
-                    <a class="main-footer__item-text">Moje konto</a>
-                    <a class="main-footer__item-text">Koszty i czas dostawy</a>
-                    <a class="main-footer__item-text">Wymiana i zwroty</a>
-                    <a class="main-footer__item-text">Reklamacje</a>
-                    <a class="main-footer__item-text">Regulamin sklepu</a>
-                    <a class="main-footer__item-text">Zobacz </a>
-                </div>
-                <div class="main-footer__item">
-                    <a class="main-footer__item-text">Strefa klienta</a>
-                    <a class="main-footer__item-text">Moje konto</a>
-                    <a class="main-footer__item-text">Koszty i czas dostawy</a>
-                    <a class="main-footer__item-text">Wymiana i zwroty</a>
-                    <a class="main-footer__item-text">Reklamacje</a>
-                    <a class="main-footer__item-text">Regulamin sklepu</a>
-                    <a class="main-footer__item-text">Zobacz </a>
+            </div>
+            <div class="main__subsection">
+                <div id="tabs">
+                    <ul>
+                        <li><a href="#tabs-1">tabela rozmiarów</a></li>
+                        <li><a href="#tabs-2">zadaj pytanie</a></li>
+                    </ul>
+                    <div id="tabs-1">
+                        <p class="main__text">
+                            Biustonosz miękki bez fiszbin wykonany z gładkiego, połyskującego materiału, imitującego
+                            satynę.
+                            Model
+                            posiada skośne cięcie, które idealnie podtrzymuje biust.
+                        </p>
+                        <p class="main__text">
+                            Zaopatrzony we wzmocnioną baskinkę (bardziej zabudowany pod biustem), która zastępuje rolę
+                            fiszbiny i
+                            zapewnia jeszcze większy komfort noszenia.
+                            Miseczki wykończono ozdobną lamówką, która gwarantuje stabilizację i dobry trzymanie biustu.
+                            Pomiędzy
+                            miseczkami umieszczono ozdobny akcent w postaci kwiatka. Ramiączka gładkie regulowane na
+                            całości.
+                        </p>
+                        <p class="main__text">
+                            Biustonosz zapinany z tyłu na haftki z trójstopniową regulacją zapięcia. Bardzo wygodny
+                            fason,
+                            idealny na co
+                            dzień. Skład: 95% poliamid, 5% elastan Model posiada skośne cięcie, które idealnie
+                            podtrzymuje
+                            biust.
+                        </p>
+                        <p class="main__text">
+                            Zaopatrzony we wzmocnioną baskinkę (bardziej zabudowany pod biustem), która zastępuje rolę
+                            fiszbiny i
+                            zapewnia jeszcze większy komfort noszenia.
+                            Miseczki wykończono ozdobną lamówką, która gwarantuje stabilizację i dobry trzymanie biustu.
+                            Pomiędzy
+                            miseczkami umieszczono ozdobny akcent w postaci kwiatka. Ramiączka gładkie regulowane na
+                            całości.
+                        </p>
+                        <p class="main__text">
+                            Biustonosz zapinany z tyłu na haftki z trójstopniową regulacją zapięcia. Bardzo wygodny
+                            fason,
+                            idealny na co
+                            dzień. Skład: 95% poliamid, 5% elastan Model posiada skośne cięcie, które idealnie
+                            podtrzymuje
+                            biust.
+                        </p>
+                        <p class="main__text">
+                            Zaopatrzony we wzmocnioną baskinkę (bardziej zabudowany pod biustem), która zastępuje rolę
+                            fiszbiny i
+                            zapewnia jeszcze większy komfort noszenia.
+                            Miseczki wykończono ozdobną lamówką, która gwarantuje stabilizację i dobry trzymanie biustu.
+                            Pomiędzy
+                            miseczkami umieszczono ozdobny akcent w postaci kwiatka. Ramiączka gładkie regulowane na
+                            całości.
+                        </p>
+                        <p class="main__text">
+                            Biustonosz zapinany z tyłu na haftki z trójstopniową regulacją zapięcia. Bardzo wygodny
+                            fason,
+                            idealny na co
+                            dzień. Skład: 95% poliamid, 5% elastan Model posiada skośne cięcie, które idealnie
+                            podtrzymuje
+                            biust.
+                        </p>
+                    </div>
+                    <div id="tabs-2">
+                        <p class="main__text">Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante,
+                            ut pharetra massa
+                            metus
+                            id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus
+                            eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem.
+                            Suspendisse
+                            sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing.
+                            Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra
+                            nulla.
+                            Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium
+                            posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor
+                            et
+                            purus.</p>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
-    <div class="main-footer__bottom">
+    </section>
+    <section class="recently-purchased">
         <div class="container">
-            <div class="main-footer__bottom-left">
-                <p class="main-footer__bottom-text">
-                    © 2017 Aurora Box - Polska
-                </p>
-            </div>
-            <div class="main-footer__bottom-right">
-                <p class="main-footer__bottom-text">
-                    Wdrożenie:
-                </p>
+            <h2 class="recently-purchased__heading">
+                <img src="images/line.png" alt="line">
+                Ostatnio kupione produkty
+            </h2>
+            <div class="recently-purchased__items">
+                <div class="recently-purchased__item">
+                    <img src="images/recently-purchased-item-img.png" alt="recently purchased image">
+                    <span class="recently-purchased__text">
+                        Przykładowy biustonosz
+                    </span>
+                    <h3 class="recently-purchased__price">
+                        59.00 zł <span class="recently-purchased__price-old">79.00zł</span>
+                    </h3>
+                </div>
+                <div class="recently-purchased__item">
+                    <img src="images/recently-purchased-item-img-2.png" alt="recently purchased image">
+                    <span class="recently-purchased__text">
+                        Przykładowy biustonosz 2
+                    </span>
+                    <h3 class="recently-purchased__price">
+                        89.00 zł
+                    </h3>
+                </div>
+                <div class="recently-purchased__item">
+                    <img src="images/recently-purchased-item-img-3.png" alt="recently purchased image">
+                    <span class="recently-purchased__text">
+                        Przykładowy biustonosz 3
+                    </span>
+                    <h3 class="recently-purchased__price">
+                        129.00 zł
+                    </h3>
+                </div>
+                <div class="recently-purchased__item">
+                    <img src="images/recently-purchased-item-img-4.png" alt="recently purchased image">
+                    <span class="recently-purchased__text">
+                        Przykładowy biustonosz 4
+                    </span>
+                    <h3 class="recently-purchased__price">
+                        69.00 zł
+                    </h3>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </section>
+    <section class="recently-purchased related">
+        <div class="container">
+            <h2 class="recently-purchased__heading">
+                <img src="images/line.png" alt="line">
+                Powiązane produkty
+            </h2>
+            <div class="recently-purchased__items">
+                <div class="recently-purchased__item">
+                    <img src="images/recently-purchased-item-img-5.png" alt="recently purchased image">
+                    <span class="recently-purchased__text">
+                        Przykładowy biustonosz
+                    </span>
+                    <h3 class="recently-purchased__price">
+                        59.00 zł <span class="recently-purchased__price-old">79.00zł</span>
+                    </h3>
+                </div>
+                <div class="recently-purchased__item">
+                    <img src="images/recently-purchased-item-img-6.png" alt="recently purchased image">
+                    <span class="recently-purchased__text">
+                        Przykładowy biustonosz 2
+                    </span>
+                    <h3 class="recently-purchased__price">
+                        89.00 zł <span class="recently-purchased__price-old">120.00zł</span>
+                    </h3>
+                </div>
+                <div class="recently-purchased__item">
+                    <img src="images/recently-purchased-item-img-7.png" alt="recently purchased image">
+                    <span class="recently-purchased__text">
+                        Przykładowy biustonosz 3
+                    </span>
+                    <h3 class="recently-purchased__price">
+                        129.00 zł <span class="recently-purchased__price-old">210.00zł</span>
+                    </h3>
+                </div>
+                <div class="recently-purchased__item">
+                    <img src="images/recently-purchased-item-img-8.png" alt="recently purchased image">
+                    <span class="recently-purchased__text">
+                        Przykładowy biustonosz 4
+                    </span>
+                    <h3 class="recently-purchased__price">
+                        69.00 zł <span class="recently-purchased__price-old">90.00zł</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fashionshop">
+        <div class="container">
+            <img src="images/fashionshop-image.png" alt="fashionshop">
+        </div>
+    </section>
+    <section class="rose-belt">
+        <div class="container">
+            <div class="rose-belt__items">
+                <div class="rose-belt__item">
+                    <img src="images/rose-belt-icon-car.png" alt="rose belt icon car">
+                    <h3 class="rose-belt__heading">
+                        Błyskawiczna wysyłka<br>w 24 godziny po zapłacie
+                    </h3>
+                </div>
+                <div class="rose-belt__item">
+                    <img src="images/rose-belt-icon-hand.png" alt="rose belt icon hand">
+                    <h3 class="rose-belt__heading">
+                        Błyskawiczna wysyłka<br>w 24 godziny po zapłacie
+                    </h3>
+                </div>
+                <div class="rose-belt__item">
+                    <img src="images/rose-belt-icon-envelope.png" alt="rose belt icon envelope">
+                    <h3 class="rose-belt__heading">
+                        Błyskawiczna wysyłka<br>w 24 godziny po zapłacie
+                    </h3>
+                </div>
+                <div class="rose-belt__item">
+                    <img src="images/rose-belt-icon-smile.png" alt="rose belt icon smile">
+                    <h3 class="rose-belt__heading">
+                        Błyskawiczna wysyłka<br>w 24 godziny po zapłacie
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="main-footer__top">
+            <div class="container">
+                <div class="main-footer__items">
+                    <div class="main-footer__item">
+                        <div class="main-footer__list">
+                            <div class="main-footer__list-element">
+                                <img src="images/list-style-image-geo.png" alt="list style image">
+                                <div class="wrapper">
+                                    <p class="main-footer__item-text icon text-heading">Aurora BOX</p>
+                                    <p class="main-footer__item-text icon">15-455 Białystok</p>
+                                    <p class="main-footer__item-text icon">ul. Bieliźniana 11 lok. 8</p>
+                                </div>
+                            </div>
+                            <div class="main-footer__list-element">
+                                <img src="images/list-style-image-phone.png" alt="list style image">
+                                <a href="tel:855269922" class="main-footer__item-text icon">85 526 99 22</a>
+                            </div>
+                            <div class="main-footer__list-element">
+                                <img src="images/list-style-image-envelope.png" alt="list style image">
+                                <div class="wrapper icon">
+                                    <a href="mailto:sklep@aurorabox.pl" class="main-footer__item-text">sklep@aurorabox.pl</a>
+                                    <div class="subwrapper">
+                                        <a href="#"><img src="images/icon__fb.png" alt="fb icon"></a>
+                                        <a href="#"><img src="images/icon__yt.png" alt="yt icon"></a>
+                                        <a href="#"><img src="images/icon__twit.png" alt="twit icon"></a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="main-footer__item">
+                        <a href="#" class="main-footer__item-text text-heading">Strefa klienta</a>
+                        <a href="#" class="main-footer__item-text">Moje konto</a>
+                        <a href="#" class="main-footer__item-text">Koszty i czas dostawy</a>
+                        <a href="#" class="main-footer__item-text">Wymiana i zwroty</a>
+                        <a href="#" class="main-footer__item-text">Reklamacje</a>
+                        <a href="#" class="main-footer__item-text">Regulamin sklepu</a>
+                        <a href="#" class="main-footer__item-text">Zobacz </a>
+                    </div>
+
+                    <div class="main-footer__item">
+                        <a href="#" class="main-footer__item-text text-heading">informacje</a>
+                        <a href="#" class="main-footer__item-text">O nas</a>
+                        <a href="#" class="main-footer__item-text">Kontakt</a>
+                        <a href="#" class="main-footer__item-text">Polityka prywatności</a>
+                        <a href="#" class="main-footer__item-text">Polityka cookies</a>
+                        <a href="#" class="main-footer__item-text">Sieć serwisów</a>
+                        <a href="#" class="main-footer__item-text">Przykład</a>
+                        <a href="#" class="main-footer__item-text">Podkategorii</a>
+                    </div>
+                    <div class="main-footer__item">
+                        <a href="#" class="main-footer__item-text text-heading">Przykładowa kategoria</a>
+                        <a href="#" class="main-footer__item-text">Sprawdź 2017</a>
+                        <a href="#" class="main-footer__item-text">Promocje</a>
+                        <a href="#" class="main-footer__item-text">Nowości!</a>
+                        <a href="#" class="main-footer__item-text">Wyprzedaże</a>
+                        <a href="#" class="main-footer__item-text">Końcówki kolekcji</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-footer__bottom">
+            <div class="container">
+                <div class="main-footer__bottom-wrapper">
+                    <div class="main-footer__bottom-left">
+                        <p class="main-footer__bottom-text">
+                            © 2017 Aurora Box - Polska
+                        </p>
+                    </div>
+                    <div class="main-footer__bottom-right">
+                        <p class="main-footer__bottom-text">
+                            Wdrożenie:
+                        </p>
+                        <a href="https://auroracreation.pl/" target="_blank"><img src="images/logo-footer.png" alt="logo footer"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+    </script>
+    <script src="dist/scripts/main.min.js"></script>
+</body>
 
 </html>
